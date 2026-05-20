@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Recorrido Virtual Casa Villa Magna</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-entrada_calle">
+        <li class="text">Entrada de la Calle</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-entrada_escaleras">
+        <li class="text">Entrada Principal Escaleras</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-entrada1">
+        <li class="text">Entrada 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-entrada_lavado">
+        <li class="text">Entrada 3 Cuarto de Lavado</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-cuarto_servicio">
+        <li class="text">Cuarto de Servicio</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-bao_servicio">
+        <li class="text">Baño del Cuarto de Servicio</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-entrada_asador">
+        <li class="text">Entrada 4 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-bao_escaleras">
+        <li class="text">Baño Principal</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-pasillo_escaleras">
+        <li class="text">Pasillo de las Escaleras</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-habitacion1_pasillo">
+        <li class="text">Habitación 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-closet_habitacion1">
+        <li class="text">Closet de la Habitación 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-bao_habitacion1">
+        <li class="text">Baño de la Habitación 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-habitacion2">
+        <li class="text">Habitación 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-closet_habitacion2">
+        <li class="text">Closet de la Habitación 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-bao_habitacion2">
+        <li class="text">Baño de la Habitación 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-cuartotv">
+        <li class="text">Habitación de Entretenimiento</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-habitacion3">
+        <li class="text">Habitación 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-balcon">
+        <li class="text">Balcón de la Habitación 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-closet_habitacion3">
+        <li class="text">Closet de la Habitación 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-bao_habitacion3">
+        <li class="text">Baño de la Habitación 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-sala">
+        <li class="text">Sala</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-sala_noche">
+        <li class="text">Sala de Noche</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-comedor">
+        <li class="text">Comedor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-cocina">
+        <li class="text">Cocina</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-estudio">
+        <li class="text">Cuarto de Estudio</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-habitacion_abajo">
+        <li class="text">Habitación Principal</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-closet_habitacionabajo">
+        <li class="text">Closet de Habitación Principal</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-bao_habitacionabajo">
+        <li class="text">Baño de Habitación Principal</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-bao_habitacionabajoluz">
+        <li class="text">Baño de Habitación Principal con luz</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-bao_alberca">
+        <li class="text">Baño de la Alberca</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-afuerahabitacionabajo">
+        <li class="text">Terraza de la Habitación Principal</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-afuera_comedor">
+        <li class="text">Terraza del Comedor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-alberca">
+        <li class="text">Alberca</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-afuera_sala">
+        <li class="text">Terraza de la Sala</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
